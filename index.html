@@ -4,43 +4,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Work</title>
+    <title>Team Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div>
-            <nav>
-                navbar
-            </nav>
-            <figure>gambar</figure>
-            <h1>landing pages</h1>
-            <h5>For my Team</h5>
-        </div>
-    </header>
-    <main>
-        <div>
-            <article>
-                gambar
-                <section>penjelasan</section>
-            </article>
-            <article>
-                gambar
-                <section>penjelasan</section>
-            </article>
-            <article>
-                gambar
-                <section>penjelasan</section>
-            </article>
-        </div>
-    </main>
-    <aside>
-        <figure>gambar</figure>
-        <article>
-            side materi
-        </article>
-    </aside>
-    <footer>
-        informasi
-    </footer>
+    <div class="container">
+
+        <header class="headrer">
+            <div class="hero">
+                <h2 class="heading">Spectator</h2>
+                <p class="sub-heading">Team Development</p>
+            </div>
+        </header>
+        <nav class="menu">
+            <div class="menu-toggle">
+                <input type="checkbox"/>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="brand">
+                <h1>Spectator</h1>
+            </div>
+            <ul class="menu-list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Teams</a></li>
+            </ul>
+        </nav>
+        <section class="services">
+            <div class="service">
+                <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/laptop-coding.png"/></div>
+                <h3>Tutorial</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt optio at in fuga quam.</p>
+            </div>
+            <div class="service">
+                <div class="icon"><img src="https://img.icons8.com/ios-filled/100/000000/courses.png"/></div>
+                <h3>Online Crouse</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt optio at in fuga quam.</p>
+            </div>
+            <div class="service">
+                <div class="icon"><img src="https://img.icons8.com/plasticine/100/000000/apple-tips.png"/></div>
+                <h3>Tips & Trick</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt optio at in fuga quam.</p>
+            </div>
+            <div class="service">
+                <div class="icon"><img src="https://img.icons8.com/ios/100/000000/clothes.png"/></div>
+                <h3>Merch</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis incidunt optio at in fuga quam.</p>
+            </div>
+        </section>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/209x209" alt="">
+            <img src="https://source.unsplash.com/random/2010x2010" alt="">
+
+        </section>
+    </div>
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav ul');
+
+    menuToggle.addEventListener('click', function(){
+        nav.classList.toggle('slide');
+    });
+</script>
 </body>
 </html>
